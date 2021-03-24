@@ -4,7 +4,7 @@ RUN apk update && apk upgrade
 # Clone project repository.
 RUN apk add --no-cache git
 WORKDIR /opt/mongodb-php-gui
-RUN git clone https://github.com/SamuelTS/MongoDB-PHP-GUI.git .
+RUN git clone https://github.com/AitElBadaoui/MongoDB-PHP-GUI.git .
 
 # Enable MongoDB PHP ext.
 RUN apk add --no-cache autoconf build-base curl-dev openssl-dev
