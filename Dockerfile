@@ -15,5 +15,5 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN composer install
 
 # Start PHP built-in server.
-EXPOSE 5000
-CMD ["php", "-S", "0.0.0.0:5000"]
+EXPOSE 80
+CMD ["php", "-S", "0.0.0.0:80"]
